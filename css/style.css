@@ -99,21 +99,26 @@ footer .contact button {
 }
 
 
-.icons ul li {
+ .icons ul li {
   display: inline-block;
 }
 
 .icons ul li i {
   font-size: 1.5rem;
-}
+} */
 .what{
   padding: 70px;
   margin-left: 0%;
   text-decoration: none;
   width: 100%;
 }
-
-
+.top{
+  height:390px;
+   margin-top:10px;
+    overflow: hidden;
+     width:100%;
+     background-color: #d0e2f2 ;
+}
 
 
 

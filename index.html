@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
     crossorigin="anonymous">
-</head>
+   </head>
 <body>
-
+<!-- navbar -->
        <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
-   <a class="navbar-brand" href="#">
+   <a class="navbar-brand" href="/index.html">
       <img src="./images/logo.webp" alt="" width="150" >
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,27 +22,31 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav  ms-auto me-auto mb-2 mb-lg-0">
         <li class="nav-item ">
-          <a class="nav-link " aria-current="page" href="#">WHAT WE DO </a>
+          <a class="nav-link " aria-current="page" href="/what.html">WHAT WE DO </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"> WHO WE HELP</a>
+          <a class="nav-link" href="/help.html"> WHO WE HELP</a>
         </li>
        <li class="nav-item">
-          <a class="nav-link" href="#">TEAM</a>
+          <a class="nav-link" href="/team.html">TEAM</a>
         </li>
        <li class="nav-item">
-          <a class="nav-link" href="#">PORTFOLIO</a>
+          <a class="nav-link" href="/portfolio.html">PORTFOLIO</a>
         </li>
        <li class="nav-item">
-          <a class="nav-link" href="#">BLOG</a>
+          <a class="nav-link" href="blog.html">BLOG</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">CONTACT US</a>
         </li>
-     <button type="button" class="btn btn-primary">GET PROPOSAL</button>
-      </ul>
+     <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">GET PROPOSAL </button> -->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Get Proposal
+    </button>  
+    </ul>
           </div>
-  </div>
+  </div> 
 </nav>
 <section>
   <div class="container">
@@ -53,11 +57,10 @@
       <p> HikeQA presents exceptional QA testing services to meet the implicit and explicit demands of your products ensuring seamless process quality and successful results.  
       </p>
     </div>
-    <div class="image"> <img src="./images/image1.png" alt=""></div>
+    <div class="image "> <img src="./image/image3.png" alt="banner-image" style="width: 100vh;"></div>
   </div>       
  </div>
 
-<!-- navbar2 -->
  </div>
     </section>
 
@@ -67,48 +70,61 @@
             <div class="row">
          <span class="sub-tittle text-center text-warning ">The statistics</span> 
           <h1 class="fw-bold text-center">  of our works</h1>       
-         
- <div class="icon"><img src="./images/image2.png" alt=""></div>
- <div>
-   <div class="d-flex">
-       <div class="card  text-dark bg-light mb-3  " style="max-width: 18rem;">
+  <div class="d-flex">
+    <div class="icon">
+      <img src="./image/image7.png" alt="" style="width: 100vh;">
+    </div>
+    <div>
+    <!-- cards -->
+    <div>
+      <!-- row -->
+      <div class="row gap-3">
+          <div class="col card  text-dark bg-light mb-3  " style="max-width: 18rem;">
+        <div class="card-body">
+      <span class="sub-tittle text-end text-warning">60+</span>
+        <h5 class="card-title text-end fw-bold ">SAAS Testing</h5>
+        <p class="card-text">QA saas testing enhances user experience and reduces support issues.</p>
+      </div>
+    </div>
+    <div class="col card text-dark bg-light mb-3" style="max-width: 18rem;">
+      <span class="subtittle text-warning text-end  ">100+</span>
+      <div class="card-body">
+        <h5 class="card-title text-end fw-bold">Web Testing</h5>
+        <p class="card-text">Monitors compatibility with browsers, accessibility, performance, speed,
+            search engine rank, traffic handling and cyber security of the website for running successful online business.</p>
+      </div>
+    </div>
+  </div>
+  <!-- endrow -->
+<!-- row -->
+<div class="row gap-3">
+  <div class="col card text-dark bg-light mb-3" style="max-width: 18rem;">
+    <span class="sub-tittle text-end text-warning">40+</span>
     <div class="card-body">
-   <span class="sub-tittle text-end text-warning">60+</span>
-    <h5 class="card-title text-end fw-bold ">SAAS Testing</h5>
-    <p class="card-text">QA saas testing enhances user experience and reduces support issues.</p>
+      <h5 class="card-title fw-bold text-end">App Testing</h5>
+      <p class="card-text">App QA testing evaluates its quality, by end-to-end testing for proper downloading, functioning,
+          usability and UI/UX stability to make an app immaculate.</p>
+    </div>
+  </div>
+  <div class="col card text-dark bg-light mb-3" style="max-width: 18rem;">
+  <span class="sub-tittle text-end text-warning">20+</span>
+    <div class="card-body">
+      <h5 class="card-title fw-bold text-end">eCom Testing</h5>
+      <p class="card-text">Examines user experience, responsiveness,
+            data security, load time, secure transaction.</p>
+    </div>
   </div>
 </div>
-<div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
-  <span class="subtittle text-warning text-end  ">100+</span>
-  <div class="card-body">
-    <h5 class="card-title text-end fw-bold">Web Testing</h5>
-    <p class="card-text">Monitors compatibility with browsers, accessibility, performance, speed,
-         search engine rank, traffic handling and cyber security of the website for running successful online business.</p>
+  <!-- endrow -->
   </div>
-</div>
-<div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
-  <span class="sub-tittle text-end text-warning">40+</span>
-  <div class="card-body">
-    <h5 class="card-title fw-bold text-end">App Testing</h5>
-    <p class="card-text">App QA testing evaluates its quality, by end-to-end testing for proper downloading, functioning,
-         usability and UI/UX stability to make an app immaculate.</p>
-  </div>
-</div>
-<div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
- <span class="sub-tittle text-end text-warning">20+</span>
-  <div class="card-body">
-    <h5 class="card-title fw-bold text-end">eCom Testing</h5>
-     <p class="card-text">Examines user experience, responsiveness,
-          data security, load time, secure transaction.</p>
-  </div>
-</div>
-</div>
-</div>
+    </div>
+  </div> 
 <p>HikeQA provides expertise Quality Assurance Testing Services to ensure accurate functionality of Mobile and Desktop Applications, and website performance on varied gadgets.
      Our focus is to thoroughly validate every aspect of the products to minimize its defects, by cutting-edge processes which include re-running of functional and
       non-functional tests to check bugs or breaks in a new code and penetration testing to fix security gaps by both automated and manual process.
 
-</p>               
+</p>          
+            </div>     
             </div>
         </div>
     </section>
@@ -179,8 +195,8 @@ iki
 <div class="container mt-5">
   <div class="row">
     <div class="d-flex align-items-center justify-content-between ">
-      <div class="photo">
-        <img src="./images/image9 .jpg" alt="photo">
+      <div class="top2 photo me-2 p-3 text-end " >
+        <img src="./image/image6.png" alt="photo" style="height: 70vh;">
       </div>
       <div>
         
@@ -423,6 +439,79 @@ iki
   </div>
   </div>
  </footer>
+ <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- username section -->
+        <div class="col-auto form-floating">
+          <label class="sr-only" for="inlineFormInputGroup">Name</label>
+          <div class="input-group mb-2 d-flex">
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="background-color: #142D43;color: white;">
+                <i class="bi bi-person" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div>
+              <span class="wpcf7-form-control-wrap your-name">
+              <input id="inlineFormInputGroup" type="text" name="your-name" value="" size="35" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control inpcol" aria-required="true" aria-invalid="false" placeholder="User Name"></span>
+            </div>
+          </div>
+        </div>
+        <!-- email section -->
+        <div class="col-auto form-floating">
+          <label class="sr-only" for="inlineFormInputGroup">Mail</label>
+          <div class="input-group mb-2 d-flex">
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="background-color: #142D43;color: white;">
+                <i class="bi bi-envelope" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div>
+              <span class="wpcf7-form-control-wrap your-name">
+              <input id="inlineFormInputGroup" type="text" name="your-name" value="" size="35" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control inpcol" aria-required="true" aria-invalid="false" placeholder="EMail"></span>
+            </div>
+          </div>
+        </div>
+        <!-- mobile section -->
+        <div class="col-auto form-floating">
+          <label class="sr-only" for="inlineFormInputGroup">User Name</label>
+          <div class="input-group mb-2 d-flex">
+            <div class="input-group-prepend">
+              <div class="input-group-text" style="background-color: #142D43;color: white;">
+                <i class="bi bi-telephone" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div>
+              <span class="wpcf7-form-control-wrap your-name">
+              <input id="inlineFormInputGroup" type="text" name="your-name" value="" size="35" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control inpcol" aria-required="true" aria-invalid="false" placeholder="Mobile"></span>
+            </div>
+          </div>
+        </div>
+            <!-- message section -->
+        <div class="col-auto form-floating my-3 mb-4">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+          <label for="floatingTextarea">Messages...</label>
+        </div>
+        <div class="d-flex justify-content-md-end">
+
+          <button type="button" class="btn btn-primary">Send query</button>
+        </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 </section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
