@@ -1,19 +1,35 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
 
-*{
+* {
   margin: 0%;
   padding: 0%;
+  box-sizing: border-box;
 }
-.services{
+.how {
+  float: left;
+}
+.services {
   clip-path: polygon(60% 3%, 85% 3%, 100% 3%, 100% 100%, 0 100%, 0 0);
   background-color: #132c42;
   color: white;
   padding-top: 2rem;
 }
+
 /* .column1{
   margin-bottom: auto;
 } */
-#row{
+* {
+  transition: all 0.3s ease-out;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #0d6efd;
+  cursor: pointer;
+}
+
+#row {
   margin-top: 10rem;
 }
 
@@ -40,16 +56,15 @@
   margin: 0 auto;
   border-radius: 1rem;
 }
-.why{
-  width:80% ;
+.why {
+  width: 80%;
 }
 /* .connect{
   clip-path: polygon(0 7%, 8% 8%, 15% 0%, 88% 0, 93% 7%, 100% 7%, 100% 89%, 93% 93%, 92% 100%, 12% 100%, 8% 93%, 0 88%);
   background-color: blue;
 } */
-.col li a{
+.col li a {
   text-decoration: none;
- 
 }
 
 .testing-plan {
@@ -65,7 +80,7 @@
 }
 
 footer row {
- margin-right: 3rem;
+  margin-right: 3rem;
 }
 
 footer a {
@@ -90,7 +105,7 @@ footer .contact button {
   background: #132c42;
   /* border: 1px solid white; */
   color: white;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .footer-links {
@@ -98,36 +113,70 @@ footer .contact button {
   text-align: center;
 }
 
-
- .icons ul li {
+.icons ul li {
   display: inline-block;
 }
 
 .icons ul li i {
   font-size: 1.5rem;
-} */
-.what{
+}
+*/ .what {
   padding: 70px;
   margin-left: 0%;
   text-decoration: none;
   width: 100%;
 }
-.top{
-  height:390px;
-   margin-top:10px;
-    overflow: hidden;
-     width:100%;
-     background-color: #d0e2f2 ;
+.top {
+  height: 390px;
+  margin-top: 10px;
+  overflow: hidden;
+  width: 100%;
+  background-color: #d0e2f2;
+}
+.index {
+  animation-delay: 0ms;
+  animation-direction: alternate;
+  animation-duration: 3s;
+  animation-name: slide;
+}
+.when {
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+  pointer-events: all;
+  border-radius: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+.when div:hover {
+  filter: grayscale(0);
+}
+.when div:hover img {
+  transform: scale(1.2);
+}
+.when:hover div:not(:hover) {
+  filter: grayscale(1) blur(1px);
+}
+@media screen and (max-width: 1080px) {
+  .card {
+    flex-direction: column;
+  }
+}
+.go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background-color: #2576da;
+  border-radius: 0 4px 0 32px;
+}
+go-arrow {
+  margin-top: -4px;
+  margin-right: -4px;
+  color: white;
+  font-family: courier, sans;
+}

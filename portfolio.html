@@ -9,7 +9,7 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body style="background-color: #f8f9fa;">
   <!-- navbar -->
        <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
@@ -361,7 +361,7 @@
         </ul>
     </div>
    
-     <div class="col text-light mt-4" style="padding: 0px;">
+    <div class="col text-light mt-4" style="padding: 0px;">
       <h2 class="text-light">Our Services</h2>
       <ul>
         <li><a href="#">Mobile App Testing services</a></li>
@@ -372,37 +372,12 @@
         <li><a href="#">unctional Testing Services</a> </li>
       </ul>
      </div>
-<div class="col text-light">
-  <h3 class="text-light">Our Locations</h3>
-    <span class="text-light">Us address</span>
-        <ul>
-          <li><a href="#">539 W. Commerce St #4421</a></li>
-          <li><a href="#">Dallas TX 75208</a></li>
-          <li><a href="#">+1 4354651421 </a></li>
-          <li><a href="#">+44 1917431421</a> </li>
-        </ul>
-    <span class="text-light">India Address</span>
-      <ul>
-        <li><a href="#">Suite 202, H-221, Infinity</a></li>
-        <li><a href="#">Business Park, Sector 63,</a></li>
-        <li><a href="#"> Noida, Uttar Pradesh 201301</a></li>
-        <li><a href="#">+91 729 096-3676</a> </li>
-        <li><a href="#"> info@hikeqa.com</a> </li>
-      </ul>
-      </div>  
+
   
 </div>
- <div class="card d-flex mt-5 contact border border-white" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title"><img src="" alt=""></h5>
-        <h6 class="card-subtitle mb-2 text-muted fw-bold text-center">Have a question?</h6>
-        <p class="card- text-center">WE DON'T BITE</p>
-      <button class="mx-auto mt-4 border border-white" ><a href="#" class="card-link ">info@hikeqa.com</a></button>
-      </div>
-  </div> 
-  
+   
   <!-- footer links -->
-  <div class="footer-links border-top border-white mt-4 pt-4">
+  <div class="footer-links ">
     <div class="company-logo">
       <img src="./images/m2.png">
       <img src="./images/m3.png">
@@ -431,9 +406,10 @@
         <p class="">Dear Customer Fill Detail Of Form Feild Our Executive Will <br> Contact Soon!</p>
       </div>
       <div class="modal-body">
+        <form  method="POST" >
         <!-- username section -->
         <div class="col-auto form-floating">
-          <label class="sr-only" for="inlineFormInputGroup">User Name</label>
+          <label class="sr-only" for="inlineFormInputGroup">Name</label>
           <div class="input-group mb-2 d-flex">
             <div class="input-group-prepend">
               <div class="input-group-text" style="background-color: #142D43;color: white;">
@@ -442,13 +418,13 @@
             </div>
             <div>
               <span class="wpcf7-form-control-wrap your-name">
-              <input id="inlineFormInputGroup" type="text" name="your-name" value="" size="35" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control inpcol" aria-required="true" aria-invalid="false" placeholder="User Name"></span>
+              <input id="name" required type="text" name="your-name" value="" size="35" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control inpcol" aria-required="true" aria-invalid="false" placeholder=" Name"></span>
             </div>
           </div>
         </div>
         <!-- email section -->
         <div class="col-auto form-floating">
-          <label class="sr-only" for="inlineFormInputGroup">Mail</label>
+          <label class="sr-only" for="inlineFormInputGroup">Email</label>
           <div class="input-group mb-2 d-flex">
             <div class="input-group-prepend">
               <div class="input-group-text" style="background-color: #142D43;color: white;">
@@ -457,13 +433,13 @@
             </div>
             <div>
               <span class="wpcf7-form-control-wrap your-name">
-              <input id="inlineFormInputGroup" type="text" name="your-name" value="" size="35" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control inpcol" aria-required="true" aria-invalid="false" placeholder="EMail"></span>
+              <input id="email"required type="email" name="your-name" value="" size="35" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control inpcol" aria-required="true" aria-invalid="false" placeholder="Email"></span>
             </div>
           </div>
         </div>
         <!-- mobile section -->
         <div class="col-auto form-floating">
-          <label class="sr-only" for="inlineFormInputGroup"> Name</label>
+          <label class="sr-only" for="inlineFormInputGroup">Mobile</label>
           <div class="input-group mb-2 d-flex">
             <div class="input-group-prepend">
               <div class="input-group-text" style="background-color: #142D43;color: white;">
@@ -472,30 +448,30 @@
             </div>
             <div>
               <span class="wpcf7-form-control-wrap your-name">
-              <input id="inlineFormInputGroup" type="text" name="your-name" value="" size="35" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control inpcol" aria-required="true" aria-invalid="false" placeholder="Mobile"></span>
+              <input id="mobile" required type="text" name="your-name" value="" size="35" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control inpcol" aria-required="true" aria-invalid="false" placeholder="Mobile"></span>
             </div>
           </div>
         </div>
-       
-        <!-- message section -->
+            <!-- message section -->
         <div class="col-auto form-floating my-3 mb-4">
-          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+          <textarea class="form-control" placeholder="Leave a comment here" id="message"></textarea>
           <label for="floatingTextarea">Messages...</label>
         </div>
         <div class="d-flex justify-content-md-end">
 
-          <button type="button" class="btn btn-primary">Send query</button>
+          <button type="submit" id="btn" class="btn btn-primary">Submit</button>
         </div>
         </div>
       </div>
+      </form>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+       
       </div>
     </div>
   </div>
 </div>
-</section>
+  </section>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
